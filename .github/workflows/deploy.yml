@@ -53,4 +53,3 @@ jobs:
           port: ${{ secrets.SSH_PORT || 22 }}
           script: |
             chown -R deployuser:www-data /var/www/html/mandanga
-            chmod -R 755 /var/www/html/mandanga

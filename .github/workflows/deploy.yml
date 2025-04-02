@@ -52,4 +52,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT || 22 }}
           script: |
-            chown -R deployuser:www-data /var/www/html/mandanga
+            sudo chown -R deployuser:www-data /var/www/html/mandanga
+            sudo chmod -R 755 /var/www/html/mandanga

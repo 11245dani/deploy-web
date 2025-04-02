@@ -3,7 +3,7 @@ name: Deploy al Servidor Ubuntu
 on:
   push:
     branches:
-      - main  # Se ejecutará cuando hagas push a la rama main funciona si o no??
+      - main  # Se ejecutará cuando hagas push a la rama main
 
 jobs:
   deploy:
@@ -28,11 +28,11 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT || 22 }}
           script: |
-            if [ -d "/var/www/html/mandanga" ]; then
+            if [ -d "/var/www/abastopro" ]; then
               TIMESTAMP=$(date +"%Y%m%d-%H%M%S")
-              mv "/var/www/html/mandanga" "/var/www/html/mandanga_$TIMESTAMP"
+              mv "/var/www/abastopro" "/var/www/abastopro_$TIMESTAMP"
             fi
-            mkdir -p "/var/www/html/mandanga"
+            mkdir -p "/var/www/abastopro"
 
       - name: Copiar archivos al servidor
         uses: appleboy/scp-action@v0.1.7
@@ -42,7 +42,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT || 22 }}
           source: "mandanga/*"
-          target: "/var/www/html/mandanga/"
+          target: "/var/www/abastopro/"
 
       - name: Ajustar permisos de archivos en el servidor
         uses: appleboy/ssh-action@v1.1.0
@@ -52,4 +52,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT || 22 }}
           script: |
-            sudo chmod -R 755 /var/www/html/mandanga
+            sudo chown -R www-data:www-data /var/www/abastopro
+            sudo chmod -R 755 /var/www/abastopro
+            sudo systemctl restart apache2

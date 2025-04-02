@@ -1,0 +1,238 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbastoPro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+   
+</head>
+
+<body class="gradient-bg text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="50" height="50" class="mr-3">
+                    <circle cx="150" cy="150" r="140" fill="#2563EB" />
+                    <path d="M50 200 
+                             L80 150 
+                             L80 100 
+                             Q100 90 120 100 
+                             L120 180 
+                             L150 150 
+                             L180 190 
+                             L180 130 
+                             Q200 120 220 130 
+                             L220 210 
+                             L250 180 
+                             L250 200 
+                             Z" 
+                           fill="white" />
+                    <line x1="90" y1="140" x2="180" y2="140" stroke="white" stroke-width="4" stroke-dasharray="10 5" />
+                    <line x1="130" y1="180" x2="220" y2="180" stroke="white" stroke-width="4" stroke-dasharray="10 5" />
+                </svg>
+                <a href="bienvenida.html">
+                    <span class="text-2xl font-bold text-blue-600">AbastoPro</span>
+                </a>
+                
+            </div>
+            <div>
+                <a href="#features" class="mx-3 hover:text-blue-600 transition">Características</a>
+                <a href="#benefits" class="mx-3 hover:text-blue-600 transition">Beneficios</a>
+                <a href="#faq" class="mx-3 hover:text-blue-600 transition">Preguntas frecuentes</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-20 pb-12">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-center md:text-left animate__animated animate__fadeInLeft">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Impulsa tu Negocio Local en Buenaventura</h1>
+                <p class="text-xl mb-6 text-gray-700">Conecta con clientes, aumenta tu visibilidad y crece tu negocio con AbastoPro</p>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <button class="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition">
+                        Conocer Más
+                    </button>
+                </div>
+            </div>
+            <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('img/Distributor-Market-Research.jpg');"></div>
+
+            <div class="md:w-1/2 mt-8 md:mt-0 hero-image rounded-lg shadow-xl animate__animated animate__fadeInRight">
+                <img src="img/Distributor-Market-Research.jpg" alt="Negocio Local" class="w-full h-auto rounded-lg">
+            </div>
+        </div>
+    </header>
+    
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12"></h2>
+            <h2 class="text-3xl font-bold text-center mb-12">Características Principales</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg text-center hover:shadow-lg transition">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-3">Perfil de Negocio Completo</h3>
+                    <p>Crea un perfil detallado con catálogo de productos, ubicación y contacto.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg text-center hover:shadow-lg transition">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-3">Geolocalización Precisa</h3>
+                    <p>Encuentra negocios cerca de ti con mapas interactivos de Google.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg text-center hover:shadow-lg transition">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-3">Gestión de Pedidos</h3>
+                    <p>Administra pedidos, seguimiento en tiempo real y sistema de reviews.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Beneficios para tu Negocio</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-600">Mayor Visibilidad</h3>
+                    <p>Destaca tu negocio en una plataforma diseñada específicamente para comerciantes de Buenaventura.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-600">Conexión Directa</h3>
+                    <p>Interactúa directamente con tus clientes sin intermediarios costosos.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-600">Impulso a la Economía Local</h3>
+                    <p>Contribuye al crecimiento de los negocios de Buenaventura con una solución 100% local.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-600">Sin Comisiones Altas</h3>
+                    <p>A diferencia de plataformas extranjeras, ofrecemos una alternativa accesible y económica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="vision-mission" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                    <h2 class="text-3xl font-bold mb-6 text-blue-600">Nuestra Visión</h2>
+                    <p class="text-lg">Ser la plataforma líder de promoción y conexión de negocios locales en Buenaventura, transformando la forma en que los comerciantes y emprendedores locales se relacionan con sus clientes en el entorno digital.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg">
+                    <h2 class="text-3xl font-bold mb-6 text-blue-600">Nuestra Misión</h2>
+                    <p class="text-lg">Empoderar a los comerciantes y emprendedores de Buenaventura mediante una plataforma digital innovadora que facilite la promoción de sus negocios, mejore su visibilidad y conecte directamente con los clientes locales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Frequently Asked Questions -->
+     <section id="faq" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Preguntas Frecuentes</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white shadow-md rounded-lg mb-4">
+                    <div class="faq-item border-b">
+                        <button class="w-full text-left p-4 font-semibold text-xl flex justify-between items-center" onclick="toggleFAQ(this)">
+                            ¿Cómo puedo registrar mi negocio?
+                            <span class="text-blue-600">+</span>
+                        </button>
+                        <div class="faq-answer hidden p-4 text-gray-700">
+                            Puedes registrar tu negocio directamente en nuestra plataforma. Necesitarás proporcionar información básica como nombre del negocio, descripción, contacto y ubicación. Nuestro equipo verificará y aprobará tu perfil.
+                        </div>
+                    </div>
+                    <div class="faq-item border-b">
+                        <button class="w-full text-left p-4 font-semibold text-xl flex justify-between items-center" onclick="toggleFAQ(this)">
+                            ¿Cuánto cuesta usar AbastoPro?
+                            <span class="text-blue-600">+</span>
+                        </button>
+                        <div class="faq-answer hidden p-4 text-gray-700">
+                            Inicialmente, ofreceremos un modelo básico gratuito para todos los negocios de Buenaventura. En futuras fases, implementaremos planes de suscripción con funcionalidades premium para negocios que deseen herramientas más avanzadas.
+                        </div>
+                    </div>
+                    <div class="faq-item border-b">
+                        <button class="w-full text-left p-4 font-semibold text-xl flex justify-between items-center" onclick="toggleFAQ(this)">
+                            ¿Cómo funciona la geolocalización?
+                            <span class="text-blue-600">+</span>
+                        </button>
+                        <div class="faq-answer hidden p-4 text-gray-700">
+                            Utilizamos Google Maps para mostrar la ubicación exacta de los negocios. Si tu negocio no está en Google Maps, podrás ingresar tu dirección manualmente y nuestro equipo la verificará antes de publicarla.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="w-full text-left p-4 font-semibold text-xl flex justify-between items-center" onclick="toggleFAQ(this)">
+                            ¿Qué tipos de negocios pueden registrarse?
+                            <span class="text-blue-600">+</span>
+                        </button>
+                        <div class="faq-answer hidden p-4 text-gray-700">
+                            Estamos abiertos a todo tipo de negocios locales en Buenaventura: restaurantes, tiendas, servicios, emprendimientos, artesanías y más. Nuestro objetivo es representar la diversidad comercial de la ciudad.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Call to Action -->
+        <section class="py-16 bg-blue-600 text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold mb-6">¡Únete a AbastoPro Hoy!</h2>
+                <p class="text-xl mb-8">Transforma la visibilidad de tu negocio y conecta con más clientes en Buenaventura.</p>
+                <div class="flex justify-center space-x-4">
+                    <button class="border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition">
+                        Contactanos
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 AbastoPro. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+<script>
+
+    // Animate on scroll
+    window.addEventListener('scroll', () => {
+        const sections = document.querySelectorAll('#features > div > div, #benefits > div > div');
+        sections.forEach(section => {
+            const sectionTop = section.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            
+            if (sectionTop < windowHeight * 0.8) {
+                section.classList.add('animate__animated', 'animate__fadeInUp');
+            }
+        });
+    });
+    
+    function toggleFAQ(element) {
+        const answer = element.nextElementSibling;
+        const icon = element.querySelector('span');
+        
+        answer.classList.toggle('hidden');
+        icon.textContent = answer.classList.contains('hidden') ? '+' : '-';
+    }
+    
+</script>
+
+</body>
+</html>
+
+

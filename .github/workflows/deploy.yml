@@ -3,7 +3,7 @@ name: Deploy al Servidor Ubuntu
 on:
   push:
     branches:
-      - main  # Se ejecutará cuando hagas push a la rama main
+      - main  # Se ejecutará cuando hagas push a la rama main funciona si o no??
 
 jobs:
   deploy:

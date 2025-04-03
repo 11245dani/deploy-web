@@ -55,6 +55,7 @@ jobs:
           port: ${{ secrets.SSH_PORT || 22 }}
           source: "mandanga/*"
           target: "/var/www/abastopro/"
+          strip_components: 1
 
       - name: Ajustar permisos de archivos en el servidor
         uses: appleboy/ssh-action@v1.1.0

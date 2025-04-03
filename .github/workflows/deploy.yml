@@ -52,6 +52,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT || 22 }}
           script: |
-            sudo chown -R www-data:www-data /var/www/abastopro
-            sudo chmod -R 755 /var/www/abastopro
-            sudo systemctl restart apache2
+            sudo -S chown -R www-data:www-data /var/www/abastopro
+            sudo -S chmod -R 755 /var/www/abastopro
+            sudo -S systemctl restart apache2
